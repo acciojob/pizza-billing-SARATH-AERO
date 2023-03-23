@@ -24,7 +24,7 @@ public class Pizza {
         else
             this.price += noVegBasePrice;
 
-        this.bill = "Base price of the pizza:" + this.price + "\n";
+        this.bill = "Base Price Of The Pizza: " + this.price + "\n";
 
     }
 
@@ -65,19 +65,19 @@ public class Pizza {
         if(alreadyBilled == false){
             alreadyBilled = true;
             if(cheeseAdded)
-                this.bill += "Extra cheese Added:" + cheesePrice + "\n";
+                this.bill += "Extra Cheese Added: " + cheesePrice + "\n";
 
             if(topinsAdded){
                 if(isVeg)
-                    this.bill += "Extra Toppings Added:" + vegToppingsPrice + "\n";
+                    this.bill += "Extra Toppings Added: " + vegToppingsPrice + "\n";
                 else
-                    this.bill += "Extra Toppings Added:" + nonVegToppingsPrice + "\n";
+                    this.bill += "Extra Toppings Added: " + nonVegToppingsPrice + "\n";
             }
 
             if(bagAdded)
-                this.bill += "PaperBag Added:" + bagPrice + "\n" ;
+                this.bill += "Paperbag Added: " + bagPrice + "\n" ;
 
-            this.bill += "Total Price:" + this.price + "\n";
+            this.bill += "Total Price: " + this.price + "\n";
 
         }
         return this.bill;
